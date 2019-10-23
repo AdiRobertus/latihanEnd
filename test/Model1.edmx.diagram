@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6d26c29f21be4374839fc9c39a3ba8ad" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="PC_XXModel.CleaningRoom" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.CleaningRoomDetail" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.CleaningRoomItem" Width="1.5" PointX="9.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.Customer" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.Employee" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.Item" Width="1.5" PointX="7.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.ItemStatus" Width="1.5" PointX="7.5" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.Job" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.Reservation" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.ReservationCheckOut" Width="1.5" PointX="9.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.ReservationRequestItem" Width="1.5" PointX="12.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.ReservationRoom" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.Room" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_XXModel.RoomType" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <AssociationConnector Association="PC_XXModel.FK_CleaningRoom_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_CleaningRoomDetail_CleaningRoom" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_CleaningRoomDetail_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_CleaningRoomItem_CleaningRoomDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_CleaningRoomItem_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_Reservation_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_Employee_Job" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_Reservation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_ReservationCheckOut_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_ReservationRequestItem_Item" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_ReservationCheckOut_ItemStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_ReservationRoom_Reservation" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_ReservationCheckOut_ReservationRoom" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_ReservationRequestItem_ReservationRoom" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_ReservationRoom_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="PC_XXModel.FK_Room_RoomType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
